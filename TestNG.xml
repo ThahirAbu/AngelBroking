@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Test Suit" verbose="1" >
+    <test name="Test Case Execution">
+
+        <!--<groups>
+            <run>
+                <include name="Negative"/>
+            </run>
+        </groups>-->
+
+        <classes>
+            <class name="ActionKeyword.Actions">
+
+            </class>
+
+            <class name="TestScripts.Login">
+                <methods>
+                    <include name="Login"/>
+                    <exclude name="Mobile"/>
+                </methods>
+            </class>
+
+            <!-- <class name="Dashboard">
+                 <methods>
+                     <include name="Notification"/>
+                     <include name="Nifty_Sensex"/>
+                     <include name="Quote_Search"/>
+                     <include name="Positions"/>
+                     <include name="Orders"/>
+                     <include name="Limits"/>
+                     <include name="Portfolio"/>
+                     <include name="StockIdeas"/>
+                     <include name="Watchlist"/>
+                     <include name="Healthcheck"/>
+                     <include name="Events"/>
+                 </methods>
+             </class>-->
+
+            <!--<class name="Profile">
+                <methods>
+                    <include name="profile"/>
+                </methods>
+            </class>-->
+
+            <!--<class name="Notification">
+                <methods>
+                    <include name="Alert"/>
+                </methods>
+            </class>-->
+
+            <class name="TestScripts.Watchlist">
+                <methods>
+                    <include name="Checking_Group"/>
+                    <include name="Creating_Group"/>
+                    <exclude name="Creating_Groups"/>
+                    <exclude name="Editing_Group"/>
+                    <include name="Editing_Groups"/>
+                    <include name="Favoriting_Group"/>
+                    <include name="Delete_Group"/>
+                    <include name="Add_Symbol"/>
+                </methods>
+            </class>
+
+           <!-- <class name = "Trade">
+                <methods>
+                    <include name="Search"/>
+                    <include name="PlaceOrder"/>
+                    <include name="Modify_Order"/>
+                    <include name="Order_Confirm"/>
+                </methods>
+            </class>-->
+
+           <class name="TestScripts.Market">
+                <methods>
+                    <exclude name="Nifty50"/>
+                    <exclude name="Sensex30"/>
+                    <exclude name="Indian_Indices"/>
+                    <exclude name="Global_Indices"/>
+                    <exclude name="Gainers"/>
+                    <exclude name="Losers"/>
+                    <exclude name="Value"/>
+                    <exclude name="Volume"/>
+                    <exclude name="News"/>
+                    <exclude name="Portfolio"/>
+                    <exclude name="Watchlist"/>
+                </methods>
+            </class>
+
+
+        </classes>
+    </test>
+</suite>
